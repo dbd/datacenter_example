@@ -11,6 +11,8 @@ RUN pip install -r requirements.txt
 
 COPY . /app
 
+EXPOSE 80/tcp
+
 ENTRYPOINT [ "python" ]
 
 CMD [ "webapp.py" ]
